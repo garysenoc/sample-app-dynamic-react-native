@@ -28,7 +28,7 @@ export function Prizes2Banner({onPress}) {
   const goForFetch = async () => {
     setFromFetch(true);
     setLoading(true);
-    await fetch('http://mobile.cbcl7.com/teamCasino.json')
+    await fetch('http://mobile.cbcl7.com/teamMorongo.json')
       .then(response => response.json())
       .then(responseJson => {
         console.log('getting data from fetch', responseJson);
